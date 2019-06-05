@@ -29,8 +29,7 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>com.cafe24.jblog.config.WebConfig</param-value>
 		</init-param>
-		
-		
+			
 	</servlet>
 	
 	<servlet-mapping>
@@ -38,8 +37,6 @@
 		<url-pattern>/</url-pattern> <!-- 모든 요청을 DispatcherServlet이 받기위해 설정 -->
 	</servlet-mapping>
 	
-	
-
 	<!-- Context Loader Listener -->
 	<!-- 1. tomcat 실행되면  web.xml 파일을 읽어서 listener로 설정된 ContextLoaderListener 객체를 호출하여 contextLoader() 메소드를 실행함 -->
 	<listener>
