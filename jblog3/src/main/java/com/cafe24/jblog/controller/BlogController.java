@@ -87,7 +87,7 @@ public class BlogController {
 	public String modify(HttpSession session,
 			@RequestParam(value = "title", required = true, defaultValue = "") String title,
 			@RequestParam(value = "logoFile") MultipartFile multipartFile) {
-
+		System.out.println(multipartFile);
 		String saveFileName = fileUploadService.restore(multipartFile);
 		String id = ((UserVo) session.getAttribute("authUser")).getId();
 		BlogVo blogVo = new BlogVo(id, title, saveFileName);
